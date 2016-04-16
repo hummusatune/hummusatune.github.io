@@ -1,0 +1,471 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700|Montserrat:400,700);
+
+/* ======================
+
+Base Styles
+
+======================= */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper { 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #594649;
+}
+
+body {
+  background: #fff;
+  font: 1em/1.5 "Libre Baskerville", serif;
+  color: #594649;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======================
+
+Navigation Styles
+
+======================= */
+
+.main-Nav {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
+}
+
+.name {
+  color: #594649;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin: 0.7em 0;
+}
+
+.nav-List {
+  display: flex;
+  flex-flow: column;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-List a {
+  background-color: #b6c9cd;
+  color: #594649;
+  display: block;
+  padding: 1em 2.5em;
+  margin: 0.3125em 0;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-List a:hover {
+  color: #594649;
+  background-color: #fff;
+  border-color: #594649;
+}
+
+/* ======================
+
+Header Styles
+
+======================= */
+
+.header-Flex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+  background: url(../img/notomRoadCrossPattern1600x685.jpg) #eee no-repeat center center fixed; 
+  background-size: cover;
+  min-height: 25em;
+}
+
+.header-Pic {
+  background: #f64740;
+  width: 9.375em;
+  height: 9.375em;
+  margin: 2.5em 1em 0 1em;
+}
+
+/* ======================
+
+Portfolio Styles
+
+======================= */
+
+#portfolio {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#portfolio h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2.5em 0 1em 0;
+}
+
+/* ======================
+
+Gallery Styles
+
+======================= */
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.gallery-Item {
+  position: relative;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
+.gallery-Item img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 1;
+   -webkit-transition: all 0.2s ease-in; 
+     -moz-transition: all  0.2s ease-in; 
+       -o-transition: all  0.2s ease-in;  
+          transition: all  0.2s ease-in;
+}
+
+.gallery-Item h3 {
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  color: #594649;
+  margin: 0;
+}
+
+.gallery-Item:hover h3 {
+  opacity: 1;
+}
+
+.gallery-Item:hover img {
+  opacity: 0.1;
+   -webkit-transition: all 0.3s ease-in; 
+     -moz-transition: all  0.3s ease-in; 
+       -o-transition: all  0.3s ease-in;  
+          transition: all  0.3s ease-in;
+}
+
+/* ======================
+
+Skills Styles
+
+======================= */
+
+.skills {
+  margin: 0 1em 2em;
+}
+
+.skills-Wrapper {
+  max-width: 21.8em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.skill1 ul,
+.skill2 ul,
+.skill3 ul,
+.skill4 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
+  margin: 0 0 0 1em;
+  padding: 0 0 0 1em;
+}
+
+.skill1 {
+  order: 1;
+}
+
+.skill2 {
+  order: 2;
+}
+
+.skill3 {
+  order: 3;
+}
+
+.skill4 {
+  order: 4;
+}
+
+/* ======================
+
+Contact Styles
+
+======================= */
+
+#contact {
+  background: #b6c9cd;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 0 2.5em 0;
+  margin: 0 0 1em 0;
+}
+
+#contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2.5em 0 1em 0;
+}
+
+.contact-Wrapper {
+  display: flex;
+  flex-flow: row;
+}
+
+.contact1 {
+  padding-right: 1em;
+}
+
+.contact2 {
+  padding-left: 1em;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact p {
+  margin: auto;
+  max-width: 31.25em;
+  text-align: center;
+}
+
+/* ======================
+
+Footer Styles
+
+======================= */
+
+footer {
+  font-size: 1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: #594649;
+  padding: 0 0 1em 0;
+}
+
+.footer-List {
+  display: flex;
+  flex-flow: row;
+  list-style-type: none;
+  color: #594649;
+}
+
+ul.footer-List {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-List li {
+  padding: 0 0.4em;
+}
+
+.footer-List a {
+  text-decoration: none;
+}
+
+.fa-linkedin-square,
+.fa-github-square {
+  color: #594649;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-linkedin-square:hover,
+.fa-github-square:hover {
+  transform: scale(1.5);
+}
+
+/* ======================
+
+Media Queries
+
+======================= */
+
+@media (min-width: 422px) {
+  .skills-Wrapper {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		width: 90%;
+		max-width: 64em;
+		margin: 0 auto;
+	}
+
+  .main-Nav,
+  .nav-List {
+    display: flex;
+  }
+
+  .nav-List {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .nav-List a {
+    background: #fff;
+    padding: 1em 2.5em;
+  }
+
+  .header-Flex {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-height: 34.375em;
+  }
+
+  .header-Pic {
+    margin: 2.5em 0;
+    border: none;
+  }
+
+  .gallery {
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .gallery-Item {
+    max-width: 18.75em;
+    height: auto;
+  }
+
+  .skills-Wrapper {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  footer {
+    width: 90%;
+    max-width: 64em;
+    margin: 0 auto;
+  }
+
+  footer .name {
+    width: auto;
+  }
+
+}
+
+@media (min-width: 999px) {
+  .header-Flex {
+    min-height: 37.5em;
+  }
+
+  .skills-Wrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-Nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-List {
+    justify-content: flex-end;
+  }
+
+  .name {
+    width: 18.75em;
+  }
+
+  #portfolio {
+    margin: 5% auto 0;
+  }
+
+  .gallery {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .gallery-Item {
+    max-width: 33%;
+    width: auto;
+    height: auto;
+  }
+
+  .gallery-Item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skills {
+    margin: 5% 0 2em 0;
+  }
+
+  .skills-Wrapper {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  #contact {
+    margin: 5% 0 1em 0;
+  }
+
+}
