@@ -112,7 +112,7 @@ header .profile-image:hover {
 .location {
   background-color: white;
   color: #594649;
-  cursor: url(images/my-cursor.png), auto;
+  cursor: url(/images/my-cursor.png), auto;
   margin: 20px;
   padding: 10px;
 }
